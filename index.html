@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Picker UI</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Single Light/Dark UI Toggle -->
+        <div class="flex">
+            <span class="label">Theme</span>
+            <div class="toggle-switch">
+                <input type="checkbox" id="themeToggle">
+                <label for="themeToggle"></label>
+            </div>
+        </div>
+
+        <!-- Color Options -->
+        <div class="color-section">
+            <span class="label">Color</span>
+            <div class="color-options">
+                <div class="color-btn" style="background-color: #3b82f6;" data-color="#3b82f6"></div>
+                <div class="color-btn" style="background-color: #10b981;" data-color="#10b981"></div>
+                <div class="color-btn" style="background-color: #f59e0b;" data-color="#f59e0b"></div>
+                <div class="color-btn" style="background-color: #ec4899;" data-color="#ec4899"></div>
+                <div class="color-btn" style="background-color: #f97316;" data-color="#f97316"></div>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="button-group">
+            <button class="action-btn" onclick="applyTheme()">Apply</button>
+            <button class="action-btn" onclick="resetTheme()">Reset</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script> 
+
+</body>
+
+</html>
